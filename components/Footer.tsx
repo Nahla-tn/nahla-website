@@ -14,13 +14,10 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start flex-wrap gap-12 pb-10 border-b border-white/10">
           <div className="max-w-[280px]">
             <div className="flex items-center gap-2">
-              <Image
+              <img
                 src="/nahla-logo.svg"
                 alt="Nahla"
-                width={28}
-                height={28}
-                className="brightness-[10]"
-                style={{ width: "auto", height: "auto" }}
+                className="w-7 h-7 brightness-[10]"
               />
               <span className="text-white font-space font-bold text-[1.2rem]">
                 Nahla
