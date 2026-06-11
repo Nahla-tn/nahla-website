@@ -106,7 +106,7 @@ export const Footer = () => {
           </div>
           <div className="flex gap-2">
             <a
-              href="https://linkedin.com/company/nahla-tn"
+              href="https://www.linkedin.com/company/nahla-%D9%86%D8%AD%D9%84%D8%A9/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Nahla sur LinkedIn"
@@ -115,7 +115,7 @@ export const Footer = () => {
               <i className="ri-linkedin-fill"></i>
             </a>
             <a
-              href="https://facebook.com/nahla.tn"
+              href="https://www.facebook.com/profile.php?id=61590918741775"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Nahla sur Facebook"
@@ -124,13 +124,22 @@ export const Footer = () => {
               <i className="ri-facebook-fill"></i>
             </a>
             <a
-              href="https://instagram.com/nahla.tn"
+              href="https://www.instagram.com/nahlatn/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Nahla sur Instagram"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-neutral-400 text-base transition-all duration-250 hover:bg-honey-500 hover:text-forest-950"
             >
               <i className="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@Nahla-tn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nahla sur YouTube"
+              className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-neutral-400 text-base transition-all duration-250 hover:bg-honey-500 hover:text-forest-950"
+            >
+              <i className="ri-youtube-fill"></i>
             </a>
           </div>
         </div>

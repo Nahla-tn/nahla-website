@@ -156,7 +156,7 @@ export const Team = () => {
             className={`bg-white border border-cream-border rounded-xl p-8 text-center transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} [transition-delay:400ms]`}
           >
             <div className="w-[88px] h-[88px] rounded-full mx-auto mb-5 overflow-hidden border-3 border-cream-border relative bg-forest-100">
-              <Image src="https://media.licdn.com/dms/image/v2/D4D03AQEGH38OqojiOQ/profile-displayphoto-shrink_400_400/B4DZULl_0PHIAk-/0/1739656267622?e=2147483647&v=beta&t=SO-2o8ZslJ7asB2deojwopMVyLscglA2W5JPZ6QfxtA" alt="Tasnim Amdouni" fill className="object-cover" sizes="88px" />
+              <Image src="/Tasnime.png" alt="Tasnim Amdouni" fill className="object-cover" sizes="88px" />
             </div>
             <div className="text-[1.05rem] font-bold text-forest-900 mb-1">
               Tasnim Amdouni

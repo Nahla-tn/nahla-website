@@ -65,34 +65,7 @@ export const Hero = () => {
           </div>
 
           <div className="w-[200px] h-[400px] lg:w-[280px] lg:h-[560px] rounded-[40px] bg-forest-800 relative shadow-[0_60px_120px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.08)] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-[100px] before:h-[24px] before:bg-forest-950 before:rounded-b-[16px] before:z-[5]" role="img" aria-label="Aperçu de l'application Nahla">
-            <div className="absolute inset-0 flex flex-col bg-gradient-to-b from-forest-700 to-forest-800">
-              <div className="pt-8 px-5 pb-3 text-center text-[0.75rem] text-white/80 font-semibold">
-                🐝 Nahla
-              </div>
-              <div className="flex-1 m-2 rounded-[16px] relative overflow-hidden bg-gradient-to-br from-[#1a5c3a] via-[#0d3321] to-forest-600">
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:30px_30px]"></div>
-                <div className="absolute rounded-full animate-zpulse w-[50px] h-[50px] bg-honey-400/40 top-[25%] left-[30%] shadow-[0_0_20px_rgba(212,160,23,0.3)]"></div>
-                <div className="absolute rounded-full animate-zpulse w-[35px] h-[35px] bg-forest-300/50 top-[50%] left-[60%] [animation-delay:0.8s]"></div>
-                <div className="absolute rounded-full animate-zpulse w-[25px] h-[25px] bg-honey-300/50 top-[40%] left-[20%] [animation-delay:1.5s]"></div>
-                <div className="absolute rounded-full animate-zpulse w-[40px] h-[40px] bg-forest-400/40 top-[65%] left-[45%] [animation-delay:2s]"></div>
-                
-                <div className="absolute top-[30%] left-[42%] w-[14px] h-[14px] bg-honey-400 rounded-full border-2 border-white shadow-[0_0_0_4px_rgba(212,160,23,0.3),0_2px_8px_rgba(0,0,0,0.3)] z-[2]"></div>
-              </div>
-              <div className="px-3 pb-5 pt-2.5 flex flex-col gap-2">
-                <div className="bg-white/10 backdrop-blur-[12px] border border-white/5 rounded-[14px] py-2.5 px-4 flex justify-between items-center">
-                  <div>
-                    <div className="text-[0.62rem] text-white/70 font-medium">Score NDVI</div>
-                    <div className="text-[1.2rem] font-extrabold text-honey-400 font-space">84<span className="text-[0.7rem] opacity-60">/100</span></div>
-                  </div>
-                  <div className="text-[0.58rem] bg-forest-300/20 text-forest-300 px-2.5 py-1 rounded-full font-semibold">
-                    {t("✓ Recommandé", "✓ موصى")}
-                  </div>
-                </div>
-                <div className="h-[5px] bg-white/10 rounded-[3px] overflow-hidden">
-                  <div className="h-full rounded-[3px] bg-gradient-to-r from-honey-500 to-honey-300 animate-bargrow"></div>
-                </div>
-              </div>
-            </div>
+            <img src="/app.png" alt="Nahla App Screen" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
