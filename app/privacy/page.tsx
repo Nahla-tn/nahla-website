@@ -10,10 +10,7 @@ export default function PrivacyPolicy() {
 
   return (
     <>
-      <a href="#main" className="skip-link">
-        <span className="fr">Aller au contenu</span>
-        <span className="ar">انتقل للمحتوى</span>
-      </a>
+
       
       <Header />
       

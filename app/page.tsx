@@ -11,12 +11,35 @@ import { Pricing } from "@/components/home/Pricing";
 import { CTA } from "@/components/home/CTA";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nahla",
+    "url": "https://nahla.tn",
+    "logo": "https://nahla.tn/nahla-logo.png",
+    "description": "Plateforme d'intelligence artificielle pour l'apiculture en Tunisie. Données satellitaires NDVI et recommandations d'emplacements de ruches.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+216-58-025-694",
+      "contactType": "customer support",
+      "email": "support@nahla.tn",
+      "availableLanguage": ["French", "Arabic"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jendouba",
+      "addressCountry": "TN"
+    },
+    "sameAs": []
+  };
+
   return (
     <>
-      <a href="#main" className="skip-link">
-        <span className="fr">Aller au contenu</span>
-        <span className="ar">انتقل للمحتوى</span>
-      </a>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       
       <Header />
       
