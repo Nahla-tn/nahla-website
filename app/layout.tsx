@@ -25,7 +25,22 @@ const notoSansArabic = Noto_Sans_Arabic({
 export const metadata: Metadata = {
   title: "Nahla — Logiciel Apiculture Tunisie | IA & Données Satellite",
   description:
-    "Nahla aide les apiculteurs tunisiens à choisir les meilleurs emplacements de ruches grâce aux données satellitaires et à l'IA.",
+    "Nahla aide les apiculteurs tunisiens à choisir les meilleurs emplacements de ruches grâce aux données satellitaires et à l'IA. Testé à Jendouba. Inscription ouverte.",
+  keywords: "apiculture, logiciel apiculture, ruches, Tunisie, IA, NDVI, satellite, miel, AgriTech, transhumance, Jendouba, emplacement ruches",
+  openGraph: {
+    type: "website",
+    title: "Nahla — Logiciel Apiculture Tunisie | IA & Données Satellite",
+    description: "Nahla aide les apiculteurs tunisiens à choisir les meilleurs emplacements de ruches grâce aux données satellitaires et à l'IA. Testé à Jendouba. Inscription ouverte.",
+    url: "https://nahla.tn/",
+    locale: "fr_TN",
+    images: [{ url: "https://nahla.tn/nahla-logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nahla — IA pour l'Apiculture",
+    description: "Nahla aide les apiculteurs tunisiens à choisir les meilleurs emplacements de ruches grâce aux données satellitaires et à l'IA. Testé à Jendouba. Inscription ouverte.",
+    images: ["https://nahla.tn/nahla-logo.png"],
+  },
 };
 
 export default function RootLayout({

@@ -34,7 +34,7 @@ export const Header = () => {
           className="flex items-center gap-2 font-space font-bold text-[1.4rem] text-forest-600"
           aria-label="Nahla — retour à l'accueil"
         >
-          <img src="/nahla-logo.svg" alt="Nahla logo" className="w-9 h-9" />
+          <Image src="/nahla-logo.svg" alt="Nahla logo" width={36} height={36} className="w-9 h-9" />
           <span>Nahla</span>
         </Link>
 
