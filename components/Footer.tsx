@@ -89,10 +89,10 @@ export const Footer = () => {
                   {t("Conditions", "الشروط")}
                 </Link>
                 <a
-                  href="mailto:support@nahla.com"
+                  href="mailto:support@nahla.tn"
                   className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
                 >
-                  Contact — support@nahla.com
+                  Contact — support@nahla.tn
                 </a>
               </div>
             </div>

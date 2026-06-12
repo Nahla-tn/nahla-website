@@ -100,12 +100,12 @@ export const CTA = () => {
               <>
                 Nous sélectionnons 50 apiculteurs
                 <br />
-                pour la saison 2025–2026.
+                pour la saison 2026–2027.
               </>,
               <>
                 نختار 50 نحّالاً
                 <br />
-                لموسم 2025–2026.
+                لموسم 2026–2027.
               </>,
             )}
           </h2>
@@ -120,10 +120,10 @@ export const CTA = () => {
             <div className="flex items-center gap-2.5 text-white/75 text-[0.9rem] rtl:flex-row-reverse rtl:justify-end">
               <i className="ri-mail-line text-honey-400 text-[1.1rem]"></i>
               <a
-                href="mailto:support@nahla.com"
+                href="mailto:support@nahla.tn"
                 className="hover:text-honey-400 transition-colors"
               >
-                support@nahla.com
+                support@nahla.tn
               </a>
             </div>
             <div className="flex items-center gap-2.5 text-white/75 text-[0.9rem] rtl:flex-row-reverse rtl:justify-end">

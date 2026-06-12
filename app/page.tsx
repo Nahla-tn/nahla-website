@@ -30,7 +30,12 @@ export default function Home() {
       "addressLocality": "Jendouba",
       "addressCountry": "TN"
     },
-    "sameAs": []
+    "sameAs": [
+      "https://www.linkedin.com/company/nahla-%D9%86%D8%AD%D9%84%D8%A9/",
+      "https://www.facebook.com/profile.php?id=61590918741775",
+      "https://www.instagram.com/nahlatn/",
+      "https://www.youtube.com/@Nahla-tn"
+    ]
   };
 
   return (

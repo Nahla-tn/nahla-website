@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
             </ul>
             <p className="mb-4">
               {t("Pour exercer ces droits, contactez-nous à : ", "لممارسة هذه الحقوق، اتصل بنا على: ")}
-              <a href="mailto:support@nahla.com" className="text-forest-500 hover:underline">support@nahla.com</a>
+              <a href="mailto:support@nahla.tn" className="text-forest-500 hover:underline">support@nahla.tn</a>
             </p>
 
             <h2 className="font-space text-[1.4rem] text-forest-600 mt-10 mb-4 font-bold tracking-[-0.02em]">
@@ -109,7 +109,7 @@ export default function PrivacyPolicy() {
             </h2>
             <p className="mb-4">{t("Pour toute question relative à cette politique :", "لأي سؤال يتعلق بهذه السياسة:")}</p>
             <ul className={`mb-6 ${language === 'ar' ? 'mr-6 list-disc' : 'ml-6 list-disc'}`}>
-              <li className="mb-2">{t("Email : ", "البريد الإلكتروني: ")}<a href="mailto:support@nahla.com" className="text-forest-500 hover:underline">support@nahla.com</a></li>
+              <li className="mb-2">{t("Email : ", "البريد الإلكتروني: ")}<a href="mailto:support@nahla.tn" className="text-forest-500 hover:underline">support@nahla.tn</a></li>
               <li className="mb-2">{t("Téléphone : +216 58 025 694", <>الهاتف: <span dir="ltr">+216 58 025 694</span></>)}</li>
               <li className="mb-2">{t("Adresse : Jendouba, Route 9 Avril, Tunisie", "العنوان: جندوبة، نهج 9 أفريل، تونس")}</li>
             </ul>

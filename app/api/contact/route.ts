@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: `"${name}" <${process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER}>`,
       replyTo: email,
-      to: process.env.SMTP_TO_EMAIL || "support@nahla.com",
+      to: process.env.SMTP_TO_EMAIL || "support@nahla.tn",
       subject: "Nouvelle inscription au programme pilote Nahla !",
       text: `
 Nouvelle demande de participation au programme pilote:

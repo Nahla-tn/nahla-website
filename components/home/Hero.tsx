@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "../LanguageProvider";
 
 export const Hero = () => {
@@ -65,7 +66,7 @@ export const Hero = () => {
           </div>
 
           <div className="w-[200px] h-[400px] lg:w-[280px] lg:h-[560px] rounded-[40px] bg-forest-800 relative shadow-[0_60px_120px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.08)] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-[100px] before:h-[24px] before:bg-forest-950 before:rounded-b-[16px] before:z-[5]" role="img" aria-label="Aperçu de l'application Nahla">
-            <img src="/app.png" alt="Nahla App Screen" className="w-full h-full object-cover" />
+            <Image src="/app.jpeg" alt="Nahla App Screen" fill className="object-cover" sizes="(max-width: 1024px) 200px, 280px" priority />
           </div>
         </div>
       </div>

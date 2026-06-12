@@ -292,10 +292,10 @@ export default function TermsOfService() {
               <li className="mb-2">
                 {t("Email : ", "البريد الإلكتروني: ")}
                 <a
-                  href="mailto:support@nahla.com"
+                  href="mailto:support@nahla.tn"
                   className="text-forest-500 hover:underline"
                 >
-                  support@nahla.com
+                  support@nahla.tn
                 </a>
               </li>
               <li className="mb-2">
