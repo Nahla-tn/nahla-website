@@ -16,6 +16,14 @@ export async function POST(request: Request) {
       );
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: "Format d'email invalide." },
+        { status: 400 }
+      );
+    }
+
     // Configure the SMTP transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -27,22 +35,33 @@ export async function POST(request: Request) {
       },
     });
 
-    // Verify connection configuration
-    await transporter.verify();
+    const escapeHtml = (unsafe: string) => {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    };
+
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safePhone = escapeHtml(phone);
+    const safeRegion = escapeHtml(region);
 
     // Construct the email content
     const mailOptions = {
-      from: `"${name}" <${process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER}>`,
-      replyTo: email,
+      from: `"${safeName}" <${process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER}>`,
+      replyTo: safeEmail,
       to: process.env.SMTP_TO_EMAIL || "support@nahla.tn",
       subject: "Nouvelle inscription au programme pilote Nahla !",
       text: `
 Nouvelle demande de participation au programme pilote:
 
-- Nom complet : ${name}
-- Email : ${email}
-- Téléphone : ${phone}
-- Gouvernorat : ${region}
+- Nom complet : ${safeName}
+- Email : ${safeEmail}
+- Téléphone : ${safePhone}
+- Gouvernorat : ${safeRegion}
       `,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
@@ -55,19 +74,19 @@ Nouvelle demande de participation au programme pilote:
             <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #6b7280; width: 120px;"><strong>Nom complet :</strong></td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;">${name}</td>
+                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;">${safeName}</td>
               </tr>
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #6b7280;"><strong>Email :</strong></td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;"><a href="mailto:${email}">${email}</a></td>
+                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;"><a href="mailto:${safeEmail}">${safeEmail}</a></td>
               </tr>
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #6b7280;"><strong>Téléphone :</strong></td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;">${phone}</td>
+                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;">${safePhone}</td>
               </tr>
               <tr>
                 <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #6b7280;"><strong>Gouvernorat :</strong></td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;">${region}</td>
+                <td style="padding: 12px 0; border-bottom: 1px solid #e5e7eb; color: #111827;">${safeRegion}</td>
               </tr>
             </table>
           </div>

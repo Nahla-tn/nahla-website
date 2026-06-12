@@ -1,6 +1,9 @@
 {
   "name": "nahla-website",
   "version": "0.1.0",
+  "description": "Nahla — Logiciel Apiculture Tunisie | IA & Données Satellite",
+  "author": "Nahla",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "next dev",
