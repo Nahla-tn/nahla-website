@@ -64,7 +64,7 @@ export const Pricing = () => {
               {t("Sans Nahla — Chaque année", "بدون نحلة — كل سنة")}
             </div>
             <div className="font-space text-[3.5rem] font-extrabold text-[#ef4444] leading-none mb-1 flex items-baseline justify-center gap-2">
-              -5 850 <span className="text-[1rem] text-white/50">{t("TND", "د.ت")}</span>
+              <span dir="ltr">-5 850</span> <span className="text-[1rem] text-white/50">{t("TND", "د.ت")}</span>
             </div>
             <div className="text-white/50 text-[0.9rem]">
               {t("perdus par apiculteur", "يخسرها كل نحّال")}
@@ -107,7 +107,7 @@ export const Pricing = () => {
               {t("🚀 LANCEMENT", "🚀 إطلاق")}
             </div>
             <div className="font-space text-[4rem] font-extrabold text-white leading-none mt-6 mb-1 flex items-baseline justify-center gap-2">
-              10 <span className="text-[1rem] font-medium text-white/50">{t("TND", "د.ت")}</span>
+              <span dir="ltr">10</span> <span className="text-[1rem] font-medium text-white/50">{t("TND", "د.ت")}</span>
             </div>
             <div className="text-[0.88rem] text-white/60 mb-1">
               {t(
