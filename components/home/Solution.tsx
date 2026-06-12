@@ -215,7 +215,7 @@ export const Solution = () => {
               {t("MVP opérationnel", "MVP جاهز")}
             </div>
             <div className="text-[0.75rem] text-neutral-500 font-medium mt-1">
-              {t("Application Android déployée", "تطبيق أندرويد منشور")}
+              {t("Applications Android et iOS", "تطبيق أندرويد و iOS منشور")}
             </div>
           </div>
         </div>

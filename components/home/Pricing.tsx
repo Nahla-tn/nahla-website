@@ -63,7 +63,7 @@ export const Pricing = () => {
             <div className="text-[0.78rem] font-bold text-white/50 uppercase tracking-[0.1em] mb-4">
               {t("Sans Nahla — Chaque année", "بدون نحلة — كل سنة")}
             </div>
-            <div className="font-space text-[3.5rem] font-extrabold text-[#ef4444] leading-none mb-1 flex items-baseline justify-center gap-2" dir="ltr">
+            <div className="font-space text-[3.5rem] font-extrabold text-[#ef4444] leading-none mb-1 flex items-baseline justify-center gap-2">
               -5 850 <span className="text-[1rem] text-white/50">{t("TND", "د.ت")}</span>
             </div>
             <div className="text-white/50 text-[0.9rem]">
@@ -106,7 +106,7 @@ export const Pricing = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-honey-500 text-forest-950 text-[0.7rem] font-bold tracking-[0.08em] px-6 py-1.5 rounded-b-xl">
               {t("🚀 LANCEMENT", "🚀 إطلاق")}
             </div>
-            <div className="font-space text-[4rem] font-extrabold text-white leading-none mt-6 mb-1 flex items-baseline justify-center gap-2" dir="ltr">
+            <div className="font-space text-[4rem] font-extrabold text-white leading-none mt-6 mb-1 flex items-baseline justify-center gap-2">
               10 <span className="text-[1rem] font-medium text-white/50">{t("TND", "د.ت")}</span>
             </div>
             <div className="text-[0.88rem] text-white/60 mb-1">

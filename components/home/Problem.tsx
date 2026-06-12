@@ -33,7 +33,7 @@ export const Problem = () => {
           <span className="section-label label-honey">
             {t("Ce qui coûte cher", "ما يكلّف غالياً")}
           </span>
-          <div className="font-space text-[clamp(3rem,7vw,5rem)] font-extrabold bg-gradient-to-br from-honey-500 to-honey-600 text-transparent bg-clip-text leading-none mb-2 flex items-baseline justify-center gap-4" dir="ltr">
+          <div className="font-space text-[clamp(3rem,7vw,5rem)] font-extrabold bg-gradient-to-br from-honey-500 to-honey-600 text-transparent bg-clip-text leading-none mb-2 flex items-baseline justify-center gap-4">
             <span>5 850</span> <span className="text-[clamp(1.5rem,3vw,2.5rem)]">{t("TND", "د.ت")}</span>
           </div>
           <div className="text-neutral-500 text-[1.15rem] font-medium">
