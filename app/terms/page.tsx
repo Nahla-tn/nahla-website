@@ -162,8 +162,8 @@ export default function TermsOfService() {
             </h2>
             <p className="mb-4">
               {t(
-                "L'accès aux fonctionnalités complètes de Nahla est proposé au tarif de 10 TND par mois. Le paiement peut être effectué :",
-                "يُقترح الوصول إلى الميزات الكاملة لـ نحلة بسعر 10 دينار شهرياً. يمكن الدفع من خلال:",
+                "L'accès aux fonctionnalités complètes de Nahla est proposé au tarif de 12 TND par mois (ou 120 TND par an). Le paiement sécurisé est effectué via la passerelle Konnect Network par :",
+                "يُقترح الوصول إلى الميزات الكاملة لـ نحلة بسعر 12 دينار شهرياً (أو 120 دينار سنوياً). يتم الدفع الآمن عبر بوابة Konnect من خلال:",
               )}
             </p>
             <ul
@@ -171,18 +171,21 @@ export default function TermsOfService() {
             >
               <li className="mb-2">
                 {t(
-                  "Par paiement mobile (D17, Flouci).",
-                  "عن طريق الدفع عبر الهاتف المحمول (D17, Flouci).",
+                  "Carte Bancaire nationale (GIE).",
+                  "البطاقة البنكية الوطنية (GIE).",
                 )}
               </li>
               <li className="mb-2">
                 {t(
-                  "Par carte prépayée (scratch) disponible dans les coopératives locales (30 TND / 3 mois).",
-                  "عن طريق بطاقة الدفع المسبق (خدش) المتوفرة في التعاونيات المحلية (30 دينار / 3 أشهر).",
+                  "e-Dinar (La Poste Tunisienne).",
+                  "بطاقة e-Dinar (البريد التونسي).",
                 )}
               </li>
               <li className="mb-2">
-                {t("Par virement bancaire.", "عن طريق التحويل المصرفي.")}
+                {t(
+                  "Portefeuille électronique (Flouci, Konnect Wallet).",
+                  "المحفظة الإلكترونية (Flouci ومحفظة Konnect).",
+                )}
               </li>
             </ul>
             <p className="mb-4">

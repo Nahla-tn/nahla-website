@@ -6,6 +6,8 @@ import { Problem } from "@/components/home/Problem";
 import { Solution } from "@/components/home/Solution";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { Features } from "@/components/home/Features";
+import { HiveManagement } from "@/components/home/HiveManagement";
+import { Roadmap } from "@/components/home/Roadmap";
 import { Testimonial } from "@/components/home/Testimonial";
 import { Pricing } from "@/components/home/Pricing";
 import { FAQ } from "@/components/home/FAQ";
@@ -49,7 +51,7 @@ export default function Home() {
         "operatingSystem": "Web, Android, iOS",
         "offers": {
           "@type": "Offer",
-          "price": "10.00",
+          "price": "12.00",
           "priceCurrency": "TND"
         },
         "creator": {
@@ -81,7 +83,7 @@ export default function Home() {
             "name": "Est-ce que l'application est gratuite ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "L'application propose des fonctionnalités de base gratuites. L'accès complet à l'IA est proposé via un abonnement à partir de 10 TND/mois."
+              "text": "L'application propose des fonctionnalités de base gratuites. L'accès complet à l'IA est proposé via un abonnement à partir de 12 TND/mois."
             }
           }
         ]
@@ -105,6 +107,8 @@ export default function Home() {
         <Solution />
         <HowItWorks />
         <Features />
+        <HiveManagement />
+        <Roadmap />
         <Testimonial />
         <Pricing />
         <FAQ />

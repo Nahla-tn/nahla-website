@@ -82,9 +82,16 @@ export const Header = () => {
           >
             {t("À Propos", "من نحن")}
           </Link>
+          <Link
+            href="/#cta"
+            className="md:hidden w-full text-center bg-forest-600 text-white py-3 rounded-xl text-[0.9rem] font-semibold mt-2 shadow-[0_4px_12px_rgba(27,67,50,0.2)]"
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("Demander une démo", "اطلب عرضاً")}
+          </Link>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <div
             className="flex bg-cream-dark rounded-full p-[3px] border border-cream-border"
             role="group"
@@ -92,7 +99,7 @@ export const Header = () => {
           >
             <button
               onClick={() => setLanguage("fr")}
-              className={`px-3 py-1 rounded-full text-[0.78rem] font-semibold transition-all duration-250 ${
+              className={`px-2.5 md:px-3 py-1 rounded-full text-[0.75rem] md:text-[0.78rem] font-semibold transition-all duration-250 ${
                 language === "fr"
                   ? "bg-white text-forest-600 shadow-[0_1px_4px_rgba(0,0,0,0.1)]"
                   : "text-neutral-500 hover:text-forest-600"
@@ -104,7 +111,7 @@ export const Header = () => {
             </button>
             <button
               onClick={() => setLanguage("ar")}
-              className={`px-3 py-1 rounded-full text-[0.78rem] font-semibold transition-all duration-250 ${
+              className={`px-2.5 md:px-3 py-1 rounded-full text-[0.75rem] md:text-[0.78rem] font-semibold transition-all duration-250 ${
                 language === "ar"
                   ? "bg-white text-forest-600 shadow-[0_1px_4px_rgba(0,0,0,0.1)]"
                   : "text-neutral-500 hover:text-forest-600"
@@ -117,7 +124,7 @@ export const Header = () => {
           </div>
           <Link
             href="/#cta"
-            className="hidden md:inline-block bg-forest-600 text-white px-5 py-2 rounded-full text-[0.85rem] font-semibold transition-all duration-250 hover:bg-forest-500 hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(27,67,50,0.3)]"
+            className="inline-block bg-forest-600 text-white px-3.5 py-1.5 md:px-5 md:py-2 rounded-full text-[0.78rem] md:text-[0.85rem] font-semibold transition-all duration-250 hover:bg-forest-500 hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(27,67,50,0.3)] whitespace-nowrap"
           >
             {t("Demander une démo", "اطلب عرضاً")}
           </Link>

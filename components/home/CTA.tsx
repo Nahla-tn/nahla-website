@@ -178,7 +178,7 @@ export const CTA = () => {
                   placeholder="Ahmed Ben Salah"
                   required
                   onChange={() => handleInputChange("name")}
-                  className={`bg-white/5 border ${formState.errors.name ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[0.9rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30`}
+                  className={`bg-white/5 border ${formState.errors.name ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[1rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30`}
                 />
                 {formState.errors.name && (
                   <div className="text-[0.72rem] text-[#ef4444] mt-1">
@@ -202,7 +202,7 @@ export const CTA = () => {
                   placeholder="+216 XX XXX XXX"
                   required
                   onChange={() => handleInputChange("phone")}
-                  className={`bg-white/5 border ${formState.errors.phone ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[0.9rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30 text-left`}
+                  className={`bg-white/5 border ${formState.errors.phone ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[1rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30 text-left`}
                   dir="ltr"
                 />
                 {formState.errors.phone && (
@@ -227,7 +227,7 @@ export const CTA = () => {
                   placeholder="ahmed@example.com"
                   required
                   onChange={() => handleInputChange("email")}
-                  className={`bg-white/5 border ${formState.errors.email ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[0.9rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30 text-left`}
+                  className={`bg-white/5 border ${formState.errors.email ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[1rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30 text-left`}
                   dir="ltr"
                 />
                 {formState.errors.email && (
@@ -252,7 +252,7 @@ export const CTA = () => {
                   placeholder="Jendouba, Béja…"
                   required
                   onChange={() => handleInputChange("region")}
-                  className={`bg-white/5 border ${formState.errors.region ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[0.9rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30`}
+                  className={`bg-white/5 border ${formState.errors.region ? "border-[#ef4444]" : "border-white/10"} rounded-xl px-4 py-3 text-white text-[1rem] outline-none transition-colors focus:border-honey-500 focus:bg-white/10 placeholder:text-white/30`}
                 />
                 {formState.errors.region && (
                   <div className="text-[0.72rem] text-[#ef4444] mt-1">

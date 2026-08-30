@@ -39,8 +39,8 @@ const faqs: FAQItem[] = [
       ar: "هل التطبيق مجاني ؟",
     },
     answer: {
-      fr: "L'application propose des fonctionnalités de base gratuites. L'accès complet à l'intelligence artificielle et aux recommandations NDVI avancées est proposé via un abonnement abordable (à partir de 10 TND/mois). Les 50 premiers inscrits au programme pilote bénéficient d'un accès gratuit jusqu'en décembre.",
-      ar: "يقدم التطبيق ميزات أساسية مجانية. يتم توفير الوصول الكامل إلى الذكاء الاصطناعي وتوصيات NDVI المتقدمة من خلال اشتراك ميسور التكلفة (بدءاً من 10 دينار/شهر). يحصل أول 50 مسجلاً في البرنامج التجريبي على وصول مجاني حتى ديسمبر.",
+      fr: "L'application propose des fonctionnalités de base gratuites. L'accès complet à l'intelligence artificielle et aux recommandations NDVI avancées est proposé via un abonnement abordable (à partir de 12 TND/mois). Les 50 premiers inscrits au programme pilote bénéficient d'un accès gratuit jusqu'en décembre.",
+      ar: "يقدم التطبيق ميزات أساسية مجانية. يتم توفير الوصول الكامل إلى الذكاء الاصطناعي وتوصيات NDVI المتقدمة من خلال اشتراك ميسور التكلفة (بدءاً من 12 دينار/شهر). يحصل أول 50 مسجلاً في البرنامج التجريبي على وصول مجاني حتى ديسمبر.",
     },
   },
   {
@@ -57,7 +57,7 @@ const faqs: FAQItem[] = [
 ];
 
 export const FAQ = () => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const [openId, setOpenId] = useState<number | null>(1);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);

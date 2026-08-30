@@ -55,7 +55,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center order-first lg:order-last mb-8 lg:mb-0">
+        <div className="relative flex justify-center items-center order-last mb-8 lg:mb-0 mt-8 lg:mt-0">
           <div className="float-card animate-floatc absolute top-[15%] -left-[55px] bg-white/5 backdrop-blur-[16px] border border-white/10 rounded-xl px-3.5 py-2.5 text-[0.72rem] text-white/85 shadow-[0_8px_32px_rgba(0,0,0,0.2)] hidden lg:block">
             <i className="ri-radar-line text-honey-400 mr-1 rtl:mr-0 rtl:ml-1"></i> 
             <span>{t("NDVI Sentinel-2", "NDVI Sentinel-2")}</span>

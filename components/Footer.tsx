@@ -57,6 +57,12 @@ export const Footer = () => {
                   {t("Comment ça marche", "كيف يعمل")}
                 </Link>
                 <Link
+                  href="/#roadmap"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Feuille de route", "خارطة الطريق")}
+                </Link>
+                <Link
                   href="/#cta"
                   className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
                 >

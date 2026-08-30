@@ -212,10 +212,10 @@ export const Solution = () => {
               <i className="ri-smartphone-fill"></i>
             </div>
             <div className="font-space text-[0.95rem] font-bold text-forest-600">
-              {t("MVP opérationnel", "MVP جاهز")}
+              {t("Phase pilote fermée", "مرحلة تجريبية مغلقة")}
             </div>
             <div className="text-[0.75rem] text-neutral-500 font-medium mt-1">
-              {t("Applications Android et iOS", "تطبيق أندرويد و iOS منشور")}
+              {t("En test sur le terrain (Jendouba & Béja)", "قيد الاختبار الميداني (جندوبة وباجة)")}
             </div>
           </div>
         </div>

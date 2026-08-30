@@ -107,7 +107,7 @@ export const Pricing = () => {
               {t("🚀 LANCEMENT", "🚀 إطلاق")}
             </div>
             <div className="font-space text-[4rem] font-extrabold text-white leading-none mt-6 mb-1 flex items-baseline justify-center gap-2">
-              <span dir="ltr">10</span> <span className="text-[1rem] font-medium text-white/50">{t("TND", "د.ت")}</span>
+              <span dir="ltr">12</span> <span className="text-[1rem] font-medium text-white/50">{t("TND", "د.ت")}</span>
             </div>
             <div className="text-[0.88rem] text-white/60 mb-1">
               {t(
@@ -124,28 +124,32 @@ export const Pricing = () => {
             <ul className="text-left rtl:text-right mb-8">
               {[
                 t(
+                  "Gestion complète des ruchers, ruches & reines",
+                  "إدارة كاملة للمناحل، الخلايا وسلالات الملكات",
+                ),
+                t(
+                  "Inspections de santé, dépistage varroa & suivi récoltes",
+                  "فحص صحي دوري، مراقبة الفاروا وسجل جني العسل",
+                ),
+                t(
+                  "Scanner QR Code ruche pour identification terrain",
+                  "مسح رمز QR للتعرف السريع على الخلايا في الميدان",
+                ),
+                t(
                   "Carte NDVI satellite et scores par zone",
                   "خريطة NDVI فضائية ونتائج لكل منطقة",
                 ),
                 t(
-                  "Météo locale adaptée à l'apiculture",
-                  "طقس محلي مخصص لتربية النحل",
+                  "Météo locale apicole & alertes pesticides",
+                  "طقس محلي مخصص للنحل وتنبيهات المبيدات",
                 ),
                 t(
-                  "Alertes phytosanitaires et pesticides",
-                  "تنبيهات صحة نباتية ومبيدات",
+                  "Guides, vidéos & conseils d'experts apicoles",
+                  "إرشادات، فيديوهات ونصائح الخبراء الميدانيين",
                 ),
                 t(
-                  "Recommandation d'emplacements de ruches",
-                  "توصيات مواقع الخلايا",
-                ),
-                t(
-                  "Réseau communautaire d'apiculteurs",
-                  "شبكة مجتمعية للنحالين",
-                ),
-                t(
-                  "Mode 3G / hors-ligne pour le terrain",
-                  "وضع 3G / بدون اتصال للميدان",
+                  "Mode hors-ligne / 3G pour zones blanches",
+                  "وضع العمل بدون إنترنت للمناطق المعزولة",
                 ),
                 t(
                   "Support direct de l'équipe Nahla pendant la première saison",
@@ -196,8 +200,8 @@ export const Pricing = () => {
 
         <p className="text-center mt-6 text-white/45 text-[0.82rem]">
           {t(
-            "Aussi disponible en carte prépayée (30 TND / 3 mois) dans les coopératives locales.",
-            <>متوفر أيضاً ببطاقة مسبقة الدفع (<span dir="ltr">30</span> د.ت / <span dir="ltr">3</span> أشهر) في التعاونيات المحلية.</>,
+            "Paiement sécurisé par Carte Bancaire, e-Dinar ou Flouci via Konnect Network.",
+            <>دفع آمن بالبطاقة البنكية، د17 (e-Dinar) أو فلوسي عبر بوابة Konnect.</>,
           )}
         </p>
       </div>

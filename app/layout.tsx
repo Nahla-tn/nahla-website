@@ -30,10 +30,6 @@ export const metadata: Metadata = {
   keywords: "apiculture, logiciel apiculture, ruches, Tunisie, IA, NDVI, satellite, miel, AgriTech, transhumance, Jendouba, emplacement ruches",
   alternates: {
     canonical: "/",
-    languages: {
-      "fr-TN": "/fr",
-      "ar-TN": "/ar",
-    },
   },
   robots: {
     index: true,

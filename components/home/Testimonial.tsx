@@ -36,27 +36,27 @@ export const Testimonial = () => {
         <div
           className={`max-w-[700px] mx-auto bg-forest-600 rounded-3xl p-8 md:px-12 md:py-12 md:pb-10 relative overflow-hidden transition-all duration-700 ease-in-out before:content-[''] before:absolute before:-top-[30%] before:-right-[10%] before:w-[300px] before:h-[300px] before:bg-[radial-gradient(circle,rgba(212,160,23,0.1)_0%,transparent_60%)] before:pointer-events-none ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <div className="text-[4rem] text-honey-400 font-serif leading-none mb-2 opacity-60">
-            &apos;
+          <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-[0.78rem] font-bold text-honey-400 uppercase tracking-wider mb-4">
+            <span>{t("Validation Terrain · Saison 2026", "التحقق الميداني · موسم 2026")}</span>
           </div>
-          <blockquote className="text-[1.15rem] text-white/90 leading-[1.8] italic mb-6 relative">
+          <div className="text-[1.25rem] text-white font-bold leading-[1.6] mb-4">
             {t(
-              "On teste Nahla depuis le printemps. On a évité deux déplacements inutiles et doublé notre rendement sur une zone qu'on n'aurait jamais choisie seuls.",
-              "نختبر نحلة منذ الربيع. تجنّبنا رحلتين ضائعتين وضاعفنا إنتاجنا في منطقة ما كنّا لنختارها وحدنا.",
-            )}
-          </blockquote>
-          <div className="text-white/70 text-[0.9rem] font-semibold">
-            {t(
-              "— Apiculteur transhumant, Jendouba (bêta-testeur)",
-              "— نحّال رحّال، جندوبة (مختبر أولي)",
+              "Programme pilote actuellement déployé auprès d'apiculteurs partenaires dans le Nord-Ouest tunisien.",
+              "البرنامج التجريبي قيد الاختبار الميداني حالياً مع النحالين الشركاء في الشمال الغربي التونسي.",
             )}
           </div>
-          <span className="block mt-4 text-[0.75rem] text-white/40 not-italic">
+          <div className="text-white/80 text-[0.95rem] leading-[1.7] mb-4">
             {t(
-              "Témoignage de bêta-testeur — étude de cas disponible sur demande.",
-              "شهادة مختبر أولي — دراسة حالة متوفرة عند الطلب.",
+              "Les premières études de cas chiffrées (économies de carburant, rendements de miel et santé des colonies) seront publiées publiquement à la fin du cycle de transhumance.",
+              "سيتم نشر دراسات الحالة والنتائج الميدانية الدقيقة (توفير الوقود، إنتاج العسل، وصحة الخلايا) فور اكتمال دورة الترحال الحالية.",
             )}
-          </span>
+          </div>
+          <div className="text-white/50 text-[0.8rem]">
+            {t(
+              "✦ Données récoltées en conditions réelles · Jendouba & Béja",
+              "✦ بيانات مجمّعة في ظروف ميدانية حقيقية · جندوبة وباجة",
+            )}
+          </div>
         </div>
       </div>
     </section>
