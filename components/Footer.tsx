@@ -36,4 +36,121 @@ export const Footer = () => {
           <div className="flex gap-16 flex-wrap">
             <div>
               <h4 className="text-white/40 text-[0.72rem] font-bold tracking-[0.12em] uppercase mb-4 font-inter">
-                {t("Pr���q�^
+                {t("Produit", "المنتج")}
+              </h4>
+              <div className="flex flex-col space-y-2">
+                <SectionLink
+                  sectionId="features"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Fonctionnalités", "المميزات")}
+                </SectionLink>
+                <SectionLink
+                  sectionId="pricing"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Tarifs et abonnements", "الأسعار والاشتراكات")}
+                </SectionLink>
+                <SectionLink
+                  sectionId="how-it-works"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Comment ça marche", "كيف يعمل")}
+                </SectionLink>
+                <SectionLink
+                  sectionId="roadmap"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Feuille de route", "خارطة الطريق")}
+                </SectionLink>
+                <SectionLink
+                  sectionId="demo-form"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Programme pilote", "البرنامج التجريبي")}
+                </SectionLink>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-white/40 text-[0.72rem] font-bold tracking-[0.12em] uppercase mb-4 font-inter">
+                {t("Entreprise", "الشركة")}
+              </h4>
+              <div className="flex flex-col space-y-2">
+                <Link
+                  href="/about"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("À Propos de Nahla", "عن نحلة")}
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Confidentialité", "الخصوصية")}
+                </Link>
+                <Link
+                  href="/terms"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  {t("Conditions", "الشروط")}
+                </Link>
+                <a
+                  href="mailto:support@nahla.tn"
+                  className="text-neutral-400 text-[0.88rem] transition-colors hover:text-white"
+                >
+                  Contact — support@nahla.tn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 flex-wrap gap-4 text-center">
+          <div className="text-neutral-600 text-[0.8rem]">
+            © 2026 Nahla · Startup Act Tunisie ·{" "}
+            {t("Tous droits réservés.", "جميع الحقوق محفوظة.")}
+          </div>
+          <div className="flex gap-2">
+            <a
+              href="https://www.linkedin.com/company/nahla-%D9%86%D8%AD%D9%84%D8%A9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nahla sur LinkedIn"
+              className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-neutral-400 text-base transition-all duration-250 hover:bg-honey-500 hover:text-forest-950"
+            >
+              <i className="ri-linkedin-fill"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61590918741775"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nahla sur Facebook"
+              className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-neutral-400 text-base transition-all duration-250 hover:bg-honey-500 hover:text-forest-950"
+            >
+              <i className="ri-facebook-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nahlatn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nahla sur Instagram"
+              className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-neutral-400 text-base transition-all duration-250 hover:bg-honey-500 hover:text-forest-950"
+            >
+              <i className="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@Nahla-tn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nahla sur YouTube"
+              className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-neutral-400 text-base transition-all duration-250 hover:bg-honey-500 hover:text-forest-950"
+            >
+              <i className="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
