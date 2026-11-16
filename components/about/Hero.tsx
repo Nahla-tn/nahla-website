@@ -14,8 +14,8 @@ export const Hero = () => {
       </h1>
       <p className="text-white/60 text-[1.1rem] max-w-[600px] mx-auto leading-[1.7] relative">
         {t(
-          "L'équipe, la vision et l'impact derrière la plateforme d'intelligence apicole.",
-          "الفريق والرؤية والأثر وراء منصة الذكاء النحلي."
+          "La vision et l'impact de notre plateforme d'intelligence apicole.",
+          "الرؤية والأثر وراء منصة الذكاء النحلي."
         )}
       </p>
     </header>
